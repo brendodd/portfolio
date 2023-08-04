@@ -30,7 +30,6 @@ body {
   text-transform: capitalize;
   margin: 0; /* Remove margin around h1 */
   padding: 20px 0px; /* Remove padding around h1 */
-  transition: all 0.3s ease; /* Example transition */
   text-align: left;
 }
 
@@ -84,7 +83,6 @@ body {
 }
 
 .projects {
-  padding-top: 100px;
   text-align: center;
 }
 
@@ -101,7 +99,15 @@ body {
   font-size: 31px;
 }
 
-.footer {
-  position: sticky;
-  align-items: flex-end;
+#anthony, #dodd {
+  transition: all 0.3s ease; /* smooth transition for all properties */
+}
+
+.hidden {
+  opacity: 0; /* Fade out */
+}
+
+.small-navbar {
+  height: 140px; /* or whatever height you want */
+  /* any other styles you want to change */
 }
