@@ -17,6 +17,14 @@ body {
   top: 0; /* Aligns the navbar to the top of the viewport */
   z-index: 1000; /* Ensures that it appears above other content */
   background-color: #ffffff; /* You might want to set a background color to ensure text readability */
+  height: 300px;  /* Adjust to fit your design */
+  max-height: 300px; /* Should be the same as height */
+  transition: max-height .3s ease-in-out;
+}
+
+.small-navbar {
+  max-height: 140px; /* or whatever height you want */
+  /* any other styles you want to change */
 }
 
 .navbar h1 {
@@ -100,14 +108,9 @@ body {
 }
 
 #anthony, #dodd {
-  transition: all 0.3s ease; /* smooth transition for all properties */
+  transition: all .3s ease; /* smooth transition for all properties */
 }
 
 .hidden {
   opacity: 0; /* Fade out */
-}
-
-.small-navbar {
-  height: 140px; /* or whatever height you want */
-  /* any other styles you want to change */
 }
