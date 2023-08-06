@@ -287,6 +287,12 @@ html, body {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
+  .description h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: -0.13rem;
+  }
 }
 
 @media only screen and (max-width: 390px) {
