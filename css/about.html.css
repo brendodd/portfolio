@@ -1,0 +1,69 @@
+.info h1 {
+  text-align: left;
+  font-size: 110px;
+  margin: 0;
+}
+
+.info p {
+  text-align: left;
+  font-size: 31px;
+  margin: 0;
+  width: 80%;
+}
+
+.skills h1 {
+  text-align: left;
+  font-size: 110px;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.skills h2 {
+  text-align: left;
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.frontend, .backend, .frontend ul, .backend ul {
+  display: block;
+  text-align: left;
+}
+
+.frontend, .backend {
+  width: 25%;  /* This assumes you want some space between them, adjust as needed */
+}
+
+.frontend li, .backend li {
+  font-size: 30px; /* Or whatever size you desire */
+}
+
+.resume h1 {
+  text-align: left;
+  font-size: 110px;
+  padding-top: 50px;
+  margin: 0;
+}
+
+.resume img {
+  width: 280px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;  /* This will space out the elements evenly */
+}
+
+.socials p {
+  padding-top: 20px;
+  display: inline-block;
+}
+
+.socials a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.1s ease-in-out;
+}
+
+.socials a:hover {
+  color: grey;
+}

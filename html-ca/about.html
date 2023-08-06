@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brendan Dodd</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/css/index.styles.css">
+    <link rel="stylesheet" href="/css/about.html.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
@@ -16,16 +17,18 @@
       <span id="anthony">Anthony</span><br>
       <span id="dodd">Dodd</span>
     </h1>
-      <ul style="list-style-type: none;">
-        <li><a href="/html-ca/index.html">Work</a></li>
-        <li><a href="/html-ca/about.html">About</a></li>
-        <li><a href="mailto:brendananthonydodd@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Brendan!">Contact</a></li>
-        <li>Language
-          <ul style="list-style-type: none;">
-            <li><a href='/html-en/index.html'>Anglès</a></li>
-            <li><a href='/html-es/index.html'>Espanyol</a></li>
-            <li><a href='/html-ca/index.html'>Català</a></li>
-          </ul>
+      <ul>
+        <li><a href="/html-ca/index.html">Treball</a></li>
+        <li><a href="/html-ca/about.html">Sobre</a></li>
+        <li><a href="mailto:brendananthonydodd@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Brendan!">Contacte</a></li>
+        <li><a href="#">Idioma</a>
+          <div class="language-list">
+            <ul>
+              <li><a href='/html-en/index.html'>Anglès</a></li>
+              <li><a href='/html-es/index.html'>Espanyol</a></li>
+              <li><a href='/html-ca/index.html'>Català</a></li>
+            </ul>
+          </div>
         </li>
       </ul>
     </nav>
@@ -35,34 +38,40 @@
        In 2020, he moved to Amsterdam to pursue a Masters at the University of Amsterdam. In 2023, Brendan attended Le Wagon Web Development bootcamp to pursue a career in full-stack development.
        Currently, Brendan is based in Barcelona and is seeking full time opportunities in full stack web development with a focus on front-end. </p>
   </div>
-  <div>
+  <div class="skills">
     <h1>Skills</h1>
-    <h2>Front-End</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>Bootstrap</li>
-        <li>Figma</li>
-        <li>React</li>
-        <li>Sass</li>
-      </ul>
-    <h2>Back-End</h2>
-    <ul>
-      <li>C#</li>
-      <li>Ruby on Rails</li>
-      <li>Ruby</li>
-      <li>postgreSQL</li>
-    </ul>
+    <div class="container">
+      <div class="frontend">
+      <h2>Front-End</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Bootstrap</li>
+          <li>Figma</li>
+          <li>React</li>
+          <li>Sass</li>
+        </ul>
+      </div>
+      <div class="backend">
+      <h2>Back-End</h2>
+        <ul>
+          <li>C#</li>
+          <li>Ruby on Rails</li>
+          <li>Ruby</li>
+          <li>postgreSQL</li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div>
-    <h1>CV <a href="/documents/Brendan-Dodd-CV.pdf" target="_blank">🔗</a></h1>
-    <p>image</p>
+  <div class="resume">
+    <h1>CV <a href="/Documents/BrendanDoddCV.pdf" alt="My resume" target="_blank">🔗</a></h1>
+    <img src="/Documents/Brendan Dodd's Resume.png" alt="My Resume">
   </div>
-  <div>
-    <p>@github</p>
-    <p>@linkedin</p>
-    <p>@instagram</p>
+  <div class="socials">
+    <p><a href="https://github.com/brendodd" target="_blank" title="Go to my github">@github</a></p>
+    <p><a href="https://www.linkedin.com/in/doddbrendan/" target="_blank" title="Go to my linkedin">@linkedin</a></p>
+    <p><a href="https://www.instagram.com/brendoddd/" target="_blank" title="Go to my instagram">@instagram</a></p>
   </div>
   <div>
     <p>Copyright Brendan Dodd 2023 🌐️</p>

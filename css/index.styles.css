@@ -4,7 +4,7 @@ h1 {
 
 body {
   font-family: 'Roboto Mono', sans-serif;
-  padding: 50px 50px;
+  padding: 0px 50px;
   flex-wrap: wrap; /* Allow the items to wrap onto multiple lines */
   text-align: center;
 }
@@ -20,6 +20,8 @@ body {
   height: 300px;  /* Adjust to fit your design */
   max-height: 300px; /* Should be the same as height */
   transition: max-height .3s ease-in-out;
+  width: 100%;
+  padding: 0;
 }
 
 .small-navbar {
@@ -45,7 +47,7 @@ body {
   color: #000;
   text-align: center;
   font-family: IBM Plex Sans Condensed;
-  font-size: 72.8px;
+  font-size: 68px;
   font-style: normal;
   font-weight: 700;
   line-height: 80.6px; /* 110.714% */
@@ -78,6 +80,28 @@ body {
   z-index: 1000; /* Ensure it's on top of other elements */
   padding: 10px 0; /* Add some padding */
 }
+
+.navbar ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.1s ease-in-out;
+}
+
+.navbar ul li {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* smooth transition */
+}
+
+.navbar ul li a {
+  display: block; /* make the whole area clickable */
+  text-decoration: none;
+  color: inherit;
+  padding: 10px; /* provide some spacing */
+}
+
+.navbar ul li a:hover {
+  color: grey;
+}
+
 .navbar li:hover ul {
   display: block;
 }
@@ -95,7 +119,9 @@ body {
 }
 
 .projects img {
-  width: 100%;
+  width: 99%;
+  border-radius: 10px;
+  border: 1px solid #000000;
 }
 
 .project {
@@ -105,6 +131,7 @@ body {
 .project-name {
   text-align: left;
   font-size: 31px;
+  padding-left: 9px;
 }
 
 #anthony, #dodd {
@@ -113,4 +140,63 @@ body {
 
 .hidden {
   opacity: 0; /* Fade out */
+}
+
+.project-name a {
+  text-decoration: none;
+}
+
+.resume a {
+  text-decoration: none;
+}
+
+.language-list ul {
+  background-color: #ffffff;
+  border-radius: 10px;
+  list-style-type: none;
+  border: 1px solid #000000;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.rectangle16 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  border-radius: 40px;
+  border: 0.50px black solid;
+}
+
+.container {
+  display: flex;
+}
+
+.description {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.my-photo img{
+  width: 60%;
+  border-radius: 30px;
+}
+
+.my-photo {
+  overflow: visible;
+  padding-top: 150px;
+}
+
+.rectangle16 a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.1s ease-in-out;
+}
+
+.rectangle16 a:hover {
+  color: grey;
 }

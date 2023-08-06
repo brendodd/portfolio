@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brendan Dodd</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/css/index.styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@700&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
@@ -16,40 +16,49 @@
       <span id="anthony">Anthony</span><br>
       <span id="dodd">Dodd</span>
     </h1>
-      <ul style="list-style-type: none;">
-        <li><a href="/html-en/index.html">Work</a></li>
-        <li><a href="/html-en/about.html">About</a></li>
-        <li><a href="mailto:brendananthonydodd@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Brendan!">Contact</a></li>
-        <li>Language
-          <ul style="list-style-type: none;">
+    <ul>
+      <li><a href="/html-en/index.html">Work</a></li>
+      <li><a href="/html-en/about.html">About</a></li>
+      <li><a href="mailto:brendananthonydodd@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Brendan!">Contact</a></li>
+      <div class="language-list">
+      <li><a href="#">Language</a>
+          <ul>
             <li><a href='/html-en/index.html'>English</a></li>
             <li><a href='/html-es/index.html'>Spanish</a></li>
             <li><a href='/html-ca/index.html'>Catalan</a></li>
           </ul>
-        </li>
-      </ul>
-    </nav>
+        </div>
+      </li>
+    </ul>
+  </nav>
   <div class="projects">
     <div class="project">
-      <p class="project-name">PerriPlan</p>
+      <p class="project-name">PerriPlan<a href="http://www.perriplan.me/" alt="PerriPlan Website" target="_blank"> 🔗</a></p>
       <img src="/Documents/Screenshot 2023-08-04 at 6.13.53 PM.png" alt="screenshot of PerriPlan website">
     </div>
     <div class="project">
-      <p class="project-name">BarkBuddy</p>
+      <p class="project-name">BarkBuddy<a href="https://bark-buddy.herokuapp.com/" alt="BarkBuddy Website" target="_blank"> 🔗</a></p>
       <img src="/Documents/Screenshot 2023-08-04 at 6.14.35 PM.png" alt="screenshot of BarkBuddy website">
     </div>
   </div>
-  <div class="description">
-    <h2>Brendan is a full stack developer living in Barcelona.
-        He specializes in creating dynamic web applications,
-        and enjoys merging a creative and technical approach to bring ideas to life.</h2>
+  <div class="container">
+    <div class="description">
+      <h2>Brendan is a full stack developer living in Barcelona.
+          He specializes in creating dynamic web applications,
+          and enjoys merging a creative and technical approach to bring ideas to life.</h2>
+    </div>
+    <div class="my-photo">
+      <img src="/Documents/25855585-3E37-4ED9-9560-9A447B9039F9_1_105_c.jpeg" alt="screenshot of PerriPlan website">
+    </div>
   </div>
-  <div>
-    <p>say hi :)</p>
+  <div class="flex-container">
+    <div class="rectangle16">
+      <p><a href="mailto:brendananthonydodd@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Brendan!">say hi :)</a></p>
+    </div>
   </div>
-  <div class="footer">
+  <footer>
     <p>Copyright Brendan Dodd 2023 🌐️</p>
-  </div>
+  </footer>
   <script src="/scripts.js"></script>
 </body>
 </html>
