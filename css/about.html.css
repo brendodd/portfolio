@@ -45,7 +45,8 @@
 }
 
 .resume img {
-  width: 280px;
+  width: 30%;
+  max-width: 100%;
 }
 
 .socials {

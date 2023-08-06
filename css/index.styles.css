@@ -3,10 +3,16 @@ h1 {
 }
 
 body {
+  font-size: 1rem; /* 1rem typically equals 16px in many browsers */
   font-family: 'Roboto Mono', sans-serif;
-  padding: 0px 50px;
-  flex-wrap: wrap; /* Allow the items to wrap onto multiple lines */
+  padding: 0 3.125rem; /* Assuming 50px is 3.125rem at base font size */
+  flex-wrap: wrap;
   text-align: center;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -17,29 +23,28 @@ body {
   top: 0; /* Aligns the navbar to the top of the viewport */
   z-index: 1000; /* Ensures that it appears above other content */
   background-color: #ffffff; /* You might want to set a background color to ensure text readability */
-  height: 300px;  /* Adjust to fit your design */
-  max-height: 300px; /* Should be the same as height */
+  height: 18.75rem;  /* Adjust to fit your design */
+  max-height: 18.75rem; /* Should be the same as height */
   transition: max-height .3s ease-in-out;
   width: 100%;
   padding: 0;
 }
 
 .small-navbar {
-  max-height: 140px; /* or whatever height you want */
-  /* any other styles you want to change */
+  max-height: 8.75rem;
 }
 
 .navbar h1 {
   color: #000;
   font-family: IBM Plex Sans Condensed;
-  font-size: 112.8px;
+  font-size: 7.05rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 89.6px; /* 79.433% */
-  letter-spacing: -7.896px;
+  line-height: 5.6rem;
+  letter-spacing: -0.4935rem;
   text-transform: capitalize;
   margin: 0; /* Remove margin around h1 */
-  padding: 20px 0px; /* Remove padding around h1 */
+  padding: 1.25rem 0; /* Remove padding around h1 */
   text-align: left;
 }
 
@@ -47,21 +52,21 @@ body {
   color: #000;
   text-align: center;
   font-family: IBM Plex Sans Condensed;
-  font-size: 68px;
+  font-size: 4.25rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 80.6px; /* 110.714% */
-  letter-spacing: -5.096px;
+  line-height: 5.038rem;
+  letter-spacing: -0.3185rem;
 }
 
 .navbar ul {
   list-style-type: none;
   margin: 0;
-  padding: 40px 0px;
+  padding: 2.5rem 0;
   display: flex;
   align-items: center;
   font-family: Roboto Mono;
-  font-size: 31px;
+  font-size: 1.9375rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -69,7 +74,7 @@ body {
   text-transform: lowercase;
 }
 .navbar li {
-  margin-right: 20px;
+  margin-right: 1.25rem;
   position: relative;
 }
 .navbar li ul {
@@ -78,7 +83,7 @@ body {
   top: 100%; /* Align it right below the parent item */
   left: 0; /* Align it to the left of the parent item */
   z-index: 1000; /* Ensure it's on top of other elements */
-  padding: 10px 0; /* Add some padding */
+  padding: 0.625rem 0; /* Add some padding */
 }
 
 .navbar ul li a {
@@ -95,7 +100,7 @@ body {
   display: block; /* make the whole area clickable */
   text-decoration: none;
   color: inherit;
-  padding: 10px; /* provide some spacing */
+  padding: 0.625rem; /* provide some spacing */
 }
 
 .navbar ul li a:hover {
@@ -107,7 +112,7 @@ body {
 }
 .navbar li ul li {
   margin-right: 0;
-  padding: 5px 10px; /* Add some padding around the links */
+  padding: 0.3125rem 0.625rem; /* Add some padding around the links */
 }
 .navbar a {
   text-decoration: none;
@@ -119,19 +124,20 @@ body {
 }
 
 .projects img {
+  max-width: 100%;
   width: 99%;
   border-radius: 10px;
-  border: 1px solid #000000;
+  border: 0.0625rem solid #000000;
 }
 
 .project {
-  padding: 50px 0px;
+  padding: 3.125rem 0;
 }
 
 .project-name {
   text-align: left;
-  font-size: 31px;
-  padding-left: 9px;
+  font-size: 1.9375rem;
+  padding-left: 0.5625rem;
 }
 
 #anthony, #dodd {
@@ -154,7 +160,7 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
   list-style-type: none;
-  border: 1px solid #000000;
+  border: 0.0625rem solid #000000;
 }
 
 .flex-container {
@@ -166,10 +172,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 50px;
+  width: 9.375rem;
+  height: 3.125rem;
   border-radius: 40px;
-  border: 0.50px black solid;
+  border: 0.003125rem solid black;
 }
 
 .container {
@@ -178,17 +184,18 @@ body {
 
 .description {
   width: 100%;
-  padding-top: 50px;
+  padding-top: 3.125rem;
 }
 
 .my-photo img{
+  max-width: 100%;
   width: 60%;
   border-radius: 30px;
 }
 
 .my-photo {
   overflow: visible;
-  padding-top: 150px;
+  padding-top: 9.375rem;
 }
 
 .rectangle16 a {
@@ -199,4 +206,189 @@ body {
 
 .rectangle16 a:hover {
   color: grey;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 0.5rem;
+  }
+
+  .navbar ul li a {
+    padding: 0.2rem 0;
+    text-align: center;
+  }
+
+  .navbar h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+    letter-spacing: -0.2rem;
+    padding: 0.7rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar ul {
+    font-size: 1.53rem;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-photo img {
+    width: 100%;
+  }
+
+  .my-photo {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 391px) and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-right: 1.2rem;
+  }
+
+  .navbar ul li a {
+    padding: 0.2rem 0;
+    text-align: center;
+  }
+
+  .navbar h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+    letter-spacing: -0.2rem;
+    padding: 0.7rem 0;
+    text-align: center;
+  }
+
+  .navbar ul {
+    font-size: 1.48rem;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-photo img {
+    width: 100%;
+  }
+
+  .my-photo {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  body {
+      font-size: 0.875rem;
+      padding: 0 1rem;
+  }
+
+  .navbar {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .navbar h1 {
+    font-size: 6rem;
+    line-height: 4.5rem;
+    letter-spacing: -0.2rem;
+    padding: 0.7rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar ul {
+    font-size: 1.45rem;
+    gap: 0.625rem;
+    width: 100%;
+  }
+
+  .navbar li {
+    margin: 0;
+    flex: 1;
+  }
+
+  .navbar ul li a {
+    padding: 0.2rem 0;
+    text-align: center; /* Center the text within each item */
+  }
+
+  .description h2 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      letter-spacing: -0.1rem;
+  }
+
+  .projects img {
+      border: 0.04rem solid #000000;
+      width: 100%;
+      max-width: 100%;
+  }
+
+  .project {
+      padding: 2rem 0;
+  }
+
+  .project-name {
+      font-size: 1.5rem;
+      padding-left: 0.3rem;
+  }
+
+  .rectangle16 p {
+      width: 7rem;
+      height: 2rem;
+      border: 0.002rem solid black;
+  }
+
+  .description {
+      padding-top: 2rem;
+  }
+
+  .my-photo img {
+      width: 100%;
+  }
+
+  .my-photo {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+  }
+
+  .navbar li ul {
+      top: 100%;
+      left: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 290px) {
+  .navbar h1 {
+    font-size: 4rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.2rem;
+    padding: 0.7rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar ul {
+    font-size: 1rem;
+    gap: 0.625rem;
+    width: 100%;
+}
 }
