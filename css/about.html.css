@@ -1,7 +1,10 @@
+@charset "UTF-8";
+
 .info h1 {
   text-align: left;
-  font-size: 110px;
+  font-size: 70px;
   margin: 0;
+  padding-top: 5rem;
 }
 
 .info p {
@@ -11,9 +14,13 @@
   width: 80%;
 }
 
+.skills {
+  text-align: center; /* Center the text */
+}
+
 .skills h1 {
   text-align: left;
-  font-size: 110px;
+  font-size: 70px;
   padding-top: 50px;
   margin: 0;
 }
@@ -31,7 +38,11 @@
 
 .frontend, .backend {
   width: 25%;  /* This assumes you want some space between them, adjust as needed */
+  flex: 1; /* Each section takes up equal width */
+  box-sizing: border-box; /* This ensures that padding and borders are included in the element's total width and height */
+  padding: 1rem; /* Add some padding around the content of each section */
 }
+
 
 .frontend li, .backend li {
   font-size: 30px; /* Or whatever size you desire */
@@ -39,7 +50,7 @@
 
 .resume h1 {
   text-align: left;
-  font-size: 110px;
+  font-size: 70px;
   padding-top: 50px;
   margin: 0;
 }
@@ -47,6 +58,7 @@
 .resume img {
   width: 30%;
   max-width: 100%;
+  padding-bottom: 1rem;
 }
 
 .socials {
@@ -70,7 +82,9 @@
 }
 
 .my-skills {
-  display: flex;
+  display: flex; /* Using flex to lay out the front-end and back-end sections side-by-side */
+  flex-wrap: wrap; /* Allow the items to wrap below each other if there's not enough space */
+  gap: 1rem; /* Gap between the front-end and back-end sections */
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -93,8 +107,7 @@
   }
 
   .skills h2 {
-    text-align: left;
-    font-size: 40px;
+    font-size: 2rem;
     padding-top: 20px;
   }
 
@@ -102,7 +115,11 @@
     display: flex;
     justify-content: center;
     gap: 10rem;
-}
+  }
+
+  .frontend li, .backend li {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 391px) and (max-width: 768px) {
@@ -127,7 +144,7 @@
   }
 
   .skills h2 {
-    text-align: left;
+    text-align: center;
     font-size: 40px;
     padding-top: 20px;
   }
@@ -135,8 +152,18 @@
   .my-skills {
     display: flex;
     justify-content: center;
-    gap: 10rem;
-}
+  }
+
+  .frontend li, .backend li {
+    font-size: 20px;
+  }
+
+  .resume h1 {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 50px;
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 390px) {
@@ -161,7 +188,7 @@
   }
 
   .skills h2 {
-    text-align: left;
+    text-align: center;
     font-size: 40px;
     padding-top: 20px;
   }
@@ -170,7 +197,18 @@
     display: flex;
     justify-content: center;
     gap: 10rem;
-}
+  }
+
+  .resume h1 {
+    text-align: center;
+    font-size: 70px;
+    padding-top: 50px;
+    margin: 0;
+  }
+
+  .resume img {
+    padding-top: 3rem;
+  }
 }
 
 @media only screen and (max-width: 290px) {}
