@@ -21,7 +21,7 @@ window.addEventListener("scroll", function() {
 });
 
 const backToTopButton = document.getElementById('back-to-top');
-
-backToTopButton.addEventListener('click', function() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+  backToTopButton.addEventListener('click', () => {
+    document.getElementById('anchor')
+    .scrollIntoView({ behavior: 'smooth' })
+  });
