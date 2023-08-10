@@ -299,18 +299,49 @@ footer {
 
 @media only screen and (min-width: 1441px) {
   .my-work {
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 25px auto;
   }
 
   .project-name {
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 25px auto;
   }
 
   .description {
-    max-width: 1500px;
+    max-width: 1600px;
     margin: 25px auto;
+  }
+
+  .info p {
+    max-width: 1600px;
+    margin: 25px auto;
+  }
+
+  .info h1 {
+    max-width: 1600px;
+    margin: 25px auto;
+  }
+
+  .skills h1 {
+    max-width: 1600px;
+    margin: 25px auto;
+  }
+
+  .my-skills {
+    max-width: 1600px;
+    margin: 25px auto;
+  }
+
+  .resume h1 {
+    max-width: 1600px;
+    margin: 25px auto;
+  }
+
+  .resume img {
+    max-width: 1600px;
+    margin: 25px auto;
+    width: 20%;
   }
 }
 
