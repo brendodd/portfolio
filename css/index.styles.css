@@ -1,4 +1,11 @@
-@charset "UTF-8";
+/* ============== //
+//  Main Styling  //
+// ============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* This makes sure padding and borders don't increase the total size of an element */
+}
 
 h1 {
   font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -12,9 +19,7 @@ body {
   text-align: center;
 }
 
-html, body {
-  max-width: 100%;
-  padding: 1rem 1rem;
+html {
   scroll-behavior: smooth;
 }
 
@@ -47,6 +52,9 @@ a:hover {
   max-height: 8.75rem;
 }
 
+/* ======== //
+//  Navbar  //
+// ======== */
 .navbar h1 {
   color: #000;
   font-family: IBM Plex Sans Condensed;
@@ -134,6 +142,33 @@ a:hover {
   color: black;
 }
 
+#anthony, #dodd {
+  transition: all .3s ease; /* smooth transition for all properties */
+}
+
+.hidden {
+  opacity: 0; /* Fade out */
+}
+
+.language-list ul {
+  background-color: #ffffff;
+  border-radius: 10px;
+  list-style-type: none;
+  border: 0.0625rem solid #000000;
+  display: flex;
+}
+
+/* ========== //
+//  Projects  //
+// ========== */
+.my-work {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
 .projects {
   text-align: center;
 }
@@ -152,14 +187,7 @@ a:hover {
 .project-name {
   text-align: left;
   font-size: 1.9375rem;
-}
-
-#anthony, #dodd {
-  transition: all .3s ease; /* smooth transition for all properties */
-}
-
-.hidden {
-  opacity: 0; /* Fade out */
+  padding: 0rem 1rem;
 }
 
 .project-name a {
@@ -168,14 +196,6 @@ a:hover {
 
 .resume a {
   text-decoration: none;
-}
-
-.language-list ul {
-  background-color: #ffffff;
-  border-radius: 10px;
-  list-style-type: none;
-  border: 0.0625rem solid #000000;
-  display: flex;
 }
 
 .flex-container {
@@ -269,18 +289,8 @@ a:hover {
   color: grey;
 }
 
-.perriplan {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
-}
-
-.barkbuddy {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
+footer {
+  padding: 1rem 0;
 }
 
 
@@ -333,7 +343,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
     height: auto;
-    padding-right: 1.2rem;
   }
 
   .navbar ul li a {

@@ -1,3 +1,7 @@
+// ================== //
+//   Navbar Styling   //
+// ================== //
+
 window.addEventListener("scroll", function() {
   var navbar = document.querySelector('.navbar');
   var anthony = document.getElementById('anthony');
@@ -19,6 +23,10 @@ window.addEventListener("scroll", function() {
     navbar.style.position = 'relative'; // Make navbar non-sticky for widths less than 1024px
   }
 });
+
+// ====================== //
+//   Scroll Up Function   //
+// ====================== //
 
 const backToTopButton = document.getElementById('back-to-top');
 
