@@ -123,6 +123,7 @@
 
   .resume h1 {
     text-align: center;
+    padding: 2rem 0rem;
   }
 }
 
@@ -143,8 +144,9 @@
 
   .skills h1 {
     text-align: center;
-    font-size: 70px;
-    padding-top: 3rem;
+    font-size: 45px;
+    padding-top: 2rem;
+    padding-left: 0;
   }
 
   .skills h2 {
@@ -164,9 +166,8 @@
 
   .resume h1 {
     text-align: center;
-    font-size: 70px;
-    padding-top: 50px;
-    margin: 0;
+    font-size: 45px;
+    padding: 2rem 0rem;
   }
   .navbar ul {
     font-size: .8rem;
@@ -219,7 +220,7 @@
   }
 
   .navbar ul {
-    font-size: .8rem;
+    font-size: 1rem;
   }
 
   .frontend li, .backend li {
