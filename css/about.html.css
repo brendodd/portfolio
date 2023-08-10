@@ -130,7 +130,7 @@
 @media only screen and (min-width: 391px) and (max-width: 768px) {
   .info h1 {
     text-align: center;
-    font-size: 70px;
+    font-size: 45px;
     margin: 0;
     padding-top: 3rem;
   }
@@ -177,7 +177,7 @@
 @media only screen and (max-width: 390px) {
   .info h1 {
     text-align: center;
-    font-size: 70px;
+    font-size: 45px;
     margin: 0;
     padding-top: 3rem;
     padding-left: 0;
@@ -192,7 +192,7 @@
 
   .skills h1 {
     text-align: center;
-    font-size: 70px;
+    font-size: 45px;
     padding-top: 3rem;
     padding-left: 0;
   }
@@ -210,7 +210,7 @@
 
   .resume h1 {
     text-align: center;
-    font-size: 70px;
+    font-size: 45px;
     padding-top: 50px;
     padding-left: 0;
   }
