@@ -194,6 +194,11 @@ a:hover {
   text-decoration: none;
 }
 
+.my-work-description {
+  padding: 1rem 0;
+  font-size: 1.3rem;
+}
+
 .resume a {
   text-decoration: none;
 }
@@ -273,7 +278,6 @@ a:hover {
   max-width: 30%; /* Adjust this as necessary to control the image width */
   height: auto;
   border-radius: 30px;
-  margin-bottom: 50px;
 }
 
 .description h2 {
@@ -336,6 +340,10 @@ footer {
   .description h2 {
     max-width: 80%; /* Optional: Increase width for smaller screens */
   }
+
+  .my-work-description {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 391px) and (max-width: 768px) {
@@ -359,7 +367,7 @@ footer {
   }
 
   .navbar ul {
-    font-size: .8rem;
+    font-size: 1rem;
   }
 
   .container {
@@ -379,27 +387,26 @@ footer {
   }
 
   .description img {
-    max-width: 100%; /* Optional: Increase width for smaller screens */
+    max-width: 50%; /* Optional: Increase width for smaller screens */
   }
 
-  .barkbuddy {
+  .my-work {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-    flex-direction: column;
-  }
-
-  .perriplan {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     gap: 2rem;
     flex-direction: column;
   }
 
   .project-name {
     text-align: center;
+  }
+
+  .projects img {
+    width: 70%;
+  }
+
+  .my-work-description {
+    font-size: 1rem;
+    padding: 1rem 1rem;
   }
 }
 
@@ -493,15 +500,7 @@ footer {
     max-width: 80%; /* Optional: Increase width for smaller screens */
   }
 
-  .barkbuddy {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
-    flex-direction: column;
-  }
-
-  .perriplan {
+  .my-work {
     display: flex;
     justify-content: space-around;
     align-items: center;
