@@ -297,6 +297,22 @@ footer {
   padding: 1rem 0;
 }
 
+@media only screen and (min-width: 1441px) {
+  .my-work {
+    max-width: 1500px;
+    margin: 25px auto;
+  }
+
+  .project-name {
+    max-width: 1500px;
+    margin: 25px auto;
+  }
+
+  .description {
+    max-width: 1500px;
+    margin: 25px auto;
+  }
+}
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .navbar {
