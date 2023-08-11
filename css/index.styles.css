@@ -316,26 +316,36 @@ footer {
   .info p {
     max-width: 1600px;
     margin: 25px auto;
+    padding: 0;
+    width: 100%;
   }
 
   .info h1 {
     max-width: 1600px;
     margin: 25px auto;
+    padding: 0;
+    width: 100%;
   }
 
   .skills h1 {
     max-width: 1600px;
     margin: 25px auto;
+    padding: 0;
+    width: 100%;
   }
 
   .my-skills {
     max-width: 1600px;
     margin: 25px auto;
+    padding: 0;
+    width: 100%;
   }
 
   .resume h1 {
     max-width: 1600px;
     margin: 25px auto;
+    padding: 0;
+    width: 100%;
   }
 
   .resume img {
@@ -381,7 +391,7 @@ footer {
   }
 
   .description img {
-    max-width: 80%; /* Optional: Increase width for smaller screens */
+    max-width: 40%; /* Optional: Increase width for smaller screens */
   }
 
   .description h2 {
@@ -455,12 +465,6 @@ footer {
     font-size: 1rem;
     padding: 1rem 1rem;
   }
-
-  .frontend, .backend, .frontend ul, .backend ul {
-    display: block;
-    text-align: center;
-    list-style-type: none;
-}
 }
 
 @media only screen and (max-width: 390px) {

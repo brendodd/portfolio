@@ -87,7 +87,7 @@
   .info h1 {
     text-align: center;
     font-size: 70px;
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-left: 0;
   }
 
@@ -101,8 +101,7 @@
   .skills h1 {
     text-align: center;
     font-size: 70px;
-    padding-top: 3rem;
-    padding: 0 1rem;
+    padding: 3rem 1rem;
   }
 
   .skills h2 {
@@ -123,6 +122,12 @@
   .resume h1 {
     text-align: center;
     padding: 2rem 0rem;
+  }
+
+  .frontend, .backend, .frontend ul, .backend ul {
+    display: block;
+    text-align: center;
+    list-style-type: none;
   }
 }
 
@@ -167,6 +172,12 @@
     text-align: center;
     font-size: 45px;
     padding: 2rem 0rem;
+  }
+
+  .frontend, .backend, .frontend ul, .backend ul {
+    display: block;
+    text-align: center;
+    list-style-type: none;
   }
 }
 
@@ -217,7 +228,13 @@
 
   .frontend li, .backend li {
     font-size: 1rem;
-}
+  }
+
+  .frontend, .backend, .frontend ul, .backend ul {
+    display: block;
+    text-align: center;
+    list-style-type: none;
+  }
 }
 
 @media only screen and (max-width: 290px) {}
