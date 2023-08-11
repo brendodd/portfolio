@@ -32,6 +32,9 @@ a:hover {
   color: grey;
 }
 
+/* ======== //
+//  Navbar  //
+// ======== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -52,9 +55,6 @@ a:hover {
   max-height: 8.75rem;
 }
 
-/* ======== //
-//  Navbar  //
-// ======== */
 .navbar h1 {
   color: #000;
   font-family: IBM Plex Sans Condensed;
@@ -455,6 +455,12 @@ footer {
     font-size: 1rem;
     padding: 1rem 1rem;
   }
+
+  .frontend, .backend, .frontend ul, .backend ul {
+    display: block;
+    text-align: center;
+    list-style-type: none;
+}
 }
 
 @media only screen and (max-width: 390px) {
