@@ -65,8 +65,9 @@ a:hover {
   letter-spacing: -0.4935rem;
   text-transform: capitalize;
   margin: 0; /* Remove margin around h1 */
-  padding: 1.25rem 0; /* Remove padding around h1 */
   text-align: left;
+  padding: 0rem 3rem;
+  padding-top: 1rem;
 }
 
 .description h2 {
@@ -133,8 +134,8 @@ a:hover {
 }
 
 .navbar li ul li {
-  margin-right: 0;
-  padding: 0.3125rem 0.625rem; /* Add some padding around the links */
+  margin-right: auto;
+  padding: 0; /* Add some padding around the links */
 }
 
 .navbar a {
@@ -163,10 +164,11 @@ a:hover {
 // ========== */
 .my-work {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   gap: 2rem;
-  padding: 1rem;
+  padding: 2rem 10rem;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
 }
 
 .projects {
@@ -175,9 +177,10 @@ a:hover {
 
 .projects img {
   max-width: 100%;
-  width: 50%;
+  width: 100%;
   border-radius: 10px;
   border: 0.0625rem solid #000000;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.25);
 }
 
 .project {
@@ -187,7 +190,7 @@ a:hover {
 .project-name {
   text-align: left;
   font-size: 1.9375rem;
-  padding: 0rem 1rem;
+  padding-top: 1rem;
 }
 
 .project-name a {
@@ -197,6 +200,7 @@ a:hover {
 .my-work-description {
   padding: 1rem 0;
   font-size: 1.3rem;
+  text-align: left;
 }
 
 .resume a {
@@ -353,6 +357,10 @@ footer {
     margin: 25px auto;
     width: 20%;
   }
+
+  .projects img {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -400,6 +408,10 @@ footer {
 
   .my-work-description {
     font-size: 1rem;
+  }
+
+  .my-work {
+
   }
 }
 
@@ -451,19 +463,19 @@ footer {
     display: flex;
     gap: 2rem;
     flex-direction: column;
+    padding: 1rem 3rem;
   }
 
   .project-name {
-    text-align: center;
+    text-align: left;
   }
 
   .projects img {
-    width: 70%;
+    width: 100%;
   }
 
   .my-work-description {
     font-size: 1rem;
-    padding: 1rem 1rem;
   }
 }
 
@@ -523,6 +535,7 @@ footer {
   .project-name {
       font-size: 1.5rem;
       padding-left: 0.3rem;
+      text-align: left;
   }
 
   .rectangle16 p {
@@ -563,14 +576,15 @@ footer {
     align-items: center;
     gap: 2rem;
     flex-direction: column;
-  }
-
-  .project-name {
-    text-align: center;
+    padding: 1rem 3rem;
   }
 
   .rectangle16 a {
     font-size: .6rem;
+  }
+
+  .my-work-description {
+    font-size: .8rem;
   }
 }
 

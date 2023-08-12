@@ -1,14 +1,14 @@
 .info h1 {
   text-align: left;
   font-size: 70px;
-  padding-top: 5rem;
-  padding-left: 1rem;
+  padding: 0 3rem;
+  padding-top: 3rem;
 }
 
 .info p {
   text-align: left;
   font-size: 31px;
-  padding-left: 1rem;
+  padding: 0 3rem;
   width: 80%;
 }
 
@@ -19,8 +19,8 @@
 .skills h1 {
   text-align: left;
   font-size: 70px;
+  padding: 0 3rem;
   padding-top: 5rem;
-  padding-left: 1rem;
 }
 
 .skills h2 {
@@ -35,7 +35,7 @@
 .frontend, .backend {
   flex: 1; /* Each section takes up equal width */
   box-sizing: border-box; /* This ensures that padding and borders are included in the element's total width and height */
-  padding: 3rem; /* Add some padding around the content of each section */
+  padding: 0 5rem; /* Add some padding around the content of each section */
 }
 
 .frontend li, .backend li {
@@ -46,8 +46,8 @@
 .resume h1 {
   text-align: left;
   font-size: 70px;
+  padding: 0 3rem;
   padding-top: 50px;
-  padding-left: 1rem;
 }
 
 .resume img {
