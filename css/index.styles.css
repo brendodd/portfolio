@@ -165,7 +165,7 @@ a:hover {
 .my-work {
   display: flex;
   gap: 2rem;
-  padding: 2rem 10rem;
+  padding: 2rem 15rem;
   flex-direction: column;
   align-items: center;
   max-width: 100%;
@@ -411,7 +411,7 @@ footer {
   }
 
   .my-work {
-
+    padding: 2rem 8rem;
   }
 }
 
