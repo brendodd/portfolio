@@ -276,6 +276,7 @@ a:hover {
   justify-content: center; /* Center the child elements horizontally */
   align-items: center;     /* Center the child elements vertically */
   gap: 100px;       /* To center the text within the h2 */
+  flex-direction: column;
 }
 
 .description img {
@@ -285,7 +286,8 @@ a:hover {
 }
 
 .description h2 {
-  max-width: 50%; /* Adjust this to control the width of the text, preventing overly long lines */
+  max-width: 100%; /* Adjust this to control the width of the text, preventing overly long lines */
+  padding: 0 3rem;
 }
 
 .rectangle16 a {
@@ -320,35 +322,35 @@ footer {
   .info p {
     max-width: 1600px;
     margin: 25px auto;
-    padding: 0;
+    padding: 0 3rem;
     width: 100%;
   }
 
   .info h1 {
     max-width: 1600px;
     margin: 25px auto;
-    padding: 0;
+    padding: 0 3rem;
     width: 100%;
   }
 
   .skills h1 {
     max-width: 1600px;
     margin: 25px auto;
-    padding: 0;
+    padding: 0 3rem;
     width: 100%;
   }
 
   .my-skills {
     max-width: 1600px;
     margin: 25px auto;
-    padding: 0;
+    padding: 0 3rem;
     width: 100%;
   }
 
   .resume h1 {
     max-width: 1600px;
     margin: 25px auto;
-    padding: 0;
+    padding: 0 3rem;
     width: 100%;
   }
 
@@ -448,7 +450,8 @@ footer {
     font-size: 2rem;
     line-height: 2.5rem;
     letter-spacing: -0.13rem;
-    max-width: 80%;
+    max-width: 100%;
+    padding: 0 3rem;
   }
 
   .description {
@@ -519,7 +522,8 @@ footer {
       font-size: 2rem;
       line-height: 2.5rem;
       letter-spacing: -0.1rem;
-      max-width: 80%;
+      max-width: 100%;
+      padding: 0;
   }
 
   .projects img {
