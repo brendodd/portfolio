@@ -580,7 +580,7 @@ footer {
     align-items: center;
     gap: 2rem;
     flex-direction: column;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
   }
 
   .rectangle16 a {
