@@ -112,21 +112,23 @@ a:hover {
   text-decoration: none;
   color: black;
   transition: color 0.1s ease-in-out;
+  display: block; /* make the whole area clickable */
+  text-decoration: none;
+  color: inherit;
+  height: 30px;
+  border-radius: 20px;
+  line-height: 25px;
+  padding: 0 10px;
+  border: 1px solid transparent;
+  transition: border-color .15s ease;
 }
 
 .navbar ul li {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* smooth transition */
 }
 
-.navbar ul li a {
-  display: block; /* make the whole area clickable */
-  text-decoration: none;
-  color: inherit;
-  padding: 0.625rem; /* provide some spacing */
-}
-
-.navbar ul li a:hover {
-  color: grey;
+.navbar ul li a:hover, .navbar ul li a:focus, .navbar ul li a.active{
+  border-color: #414042;
 }
 
 .navbar li:hover ul {
@@ -373,11 +375,6 @@ footer {
     padding: 0.5rem;
   }
 
-  .navbar ul li a {
-    padding: 0.2rem 0;
-    text-align: center;
-  }
-
   .navbar h1 {
     font-size: 6rem;
     line-height: 5rem;
@@ -422,11 +419,6 @@ footer {
     flex-direction: column;
     align-items: center;
     height: auto;
-  }
-
-  .navbar ul li a {
-    padding: 0.2rem 0;
-    text-align: center;
   }
 
   .navbar h1 {
@@ -511,11 +503,6 @@ footer {
   .navbar li {
     margin: 0;
     flex: 1;
-  }
-
-  .navbar ul li a {
-    padding: 0.2rem 0;
-    text-align: center; /* Center the text within each item */
   }
 
   .description h2 {
