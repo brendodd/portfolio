@@ -33,3 +33,23 @@ const backToTopButton = document.getElementById('back-to-top');
 backToTopButton.addEventListener('click', function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// ====================== //
+//   Email Confirmation   //
+// ====================== //
+
+document.addEventListener("DOMContentLoaded", function () {
+  var contactLink = document.getElementById("contactLink");
+
+  contactLink.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      // Show a confirmation dialog
+      var confirmSendEmail = window.confirm("Do you want to send an email?");
+
+      if (confirmSendEmail) {
+          // If the user confirms, open the email client
+          window.location.href = "mailto:brendananthonydodd@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Brendan!";
+      }
+  });
+});
