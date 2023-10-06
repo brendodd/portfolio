@@ -17,6 +17,7 @@ body {
   padding: 0;
   flex-wrap: wrap;
   text-align: center;
+  overflow-x: hidden;
 }
 
 html {
