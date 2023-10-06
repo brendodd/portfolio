@@ -17,11 +17,11 @@ body {
   padding: 0;
   flex-wrap: wrap;
   text-align: center;
-  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body, html {
