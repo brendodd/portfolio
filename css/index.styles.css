@@ -42,7 +42,7 @@ a:hover {
 // ======== */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start; /* Aligns items to the top */
   position: sticky; /* Makes the navbar sticky */
   top: 0; /* Aligns the navbar to the top of the viewport */
